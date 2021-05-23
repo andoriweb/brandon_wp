@@ -89,6 +89,12 @@
     wp_enqueue_script( 'send', B_JS_DIR . '/send.js' );
   }
 
+  /* Регистрация меню */
+  add_action( 'after_setup_theme', 'top_menu' );
+  function top_menu() {
+    register_nav_menu( 'top', 'Верхнее меню' );
+    register_nav_menu( 'mob', 'Мобильное меню' );
+  }
 
 
 

@@ -57,14 +57,11 @@
             <div class="col-md-10 col-sm-10 col-xs-0">
               <div class="nav_block">
                 <div class="mnu hidden-xs">
-                  <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#blog">Blog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li class="lamp"><span></span></li>
-                  </ul>
+                  <?php wp_nav_menu([
+                    'theme_location' => 'top',
+                    'container'      => null
+                  ]) ?>
+                  <span class="lamp"><span></span></span>
                 </div>
               </div>
             </div>
@@ -72,13 +69,10 @@
             <!--Mobile Main Menu-->
             <div class="col-xs-12 top_mnu">
               <div class="mnu_menu">
-                <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#portfolio">Portfolio</a></li>
-                  <li><a href="#contact">Blog</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
+                <?php wp_nav_menu([
+                  'theme_location' => 'mob',
+                  'container'      => null
+                ]) ?>
               </div>
             </div>
             <!--End Mobile Main Menu-->
