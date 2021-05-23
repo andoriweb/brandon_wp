@@ -96,6 +96,14 @@
     register_nav_menu( 'mob', 'Мобильное меню' );
   }
 
+  // /* Логотип */
+  // add_theme_support( 'custom-logo', [
+  //   'height'      => 58,
+  //   'width'       => 58,
+  //   'flex-width'  => false,
+  //   'flex-height' => false
+  // ] );
+
 
 
 

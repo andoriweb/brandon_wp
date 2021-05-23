@@ -567,7 +567,7 @@ display: block;
 }
 
 .logo_img a {
-  background: transparent url('../img/logo.png') no-repeat left center;
+  /* background: transparent url('../img/logo.png') no-repeat left center; */
   height: 60px;
   display: block;
 }

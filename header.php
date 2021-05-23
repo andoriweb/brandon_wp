@@ -45,10 +45,7 @@
             <div class="col-md-2 col-sm-2 col-xs-12">
               <div class="logo_block">
                 <a href="#" class="toggle-mnu hidden-lg hidden-md hidden-sm"><span></span></a>
-                <!-- toogle menu for small screen -->
-                <!--<h1 class="logo_img"><a class="none" href="">Brendon - Personal HTML Template For Creative Professionals</a></h1>-->
-                <!-- Delete comment -->
-                <h1 class="logo"><a href="index.html">B.</a></h1><!-- Change logo text -->
+                <h1 class="logo_img" style="background: transparent url(<?php the_field('logo'); ?>) no-repeat left center;"><a class="none" href="#">B.</a></h1>
               </div>
             </div>
 
