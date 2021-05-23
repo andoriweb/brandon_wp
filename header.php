@@ -10,25 +10,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Favicon and Apple Touch Icons -->
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+  <link rel="shortcut icon" href="<?php echo B_IMG_DIR ?>/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="<?php echo B_IMG_DIR ?>/favicon/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo B_IMG_DIR ?>/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo B_IMG_DIR ?>/favicon/apple-touch-icon-114x114.png">
 
   <!-- Stylesheets -->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
 
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
-
-  <link rel="stylesheet" href="css/style.css?014">
-
-  <link rel="stylesheet" href="css/media.css?015">
-
-  <!--[if lt IE 9 ]>
-<script src="/js/html5shiv-master/html5shiv.js" type="text/javascript"></script><meta content="no" http-equiv="imagetoolbar">
-<![endif]-->
+  <?php wp_head(); ?>
 
 
 </head>
@@ -46,7 +37,7 @@
 
   <!-- Header -->
   <header id="home" class="head_bg" data-parallax="scroll" data-bleed="200" data-z-index="-100" data-speed="0.1"
-    data-image-src="img/first_screen_bg.jpg" data-over-scroll-fix="true">
+    data-image-src="<?php echo B_IMG_DIR ?>/first_screen_bg.jpg" data-over-scroll-fix="true">
     <div class="overlay_color">
       <div class="mnu_line">
         <div class="container">

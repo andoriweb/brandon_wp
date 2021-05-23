@@ -76,28 +76,28 @@
       <div class="row about_block">
         <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.2s">
           <div class="about_block_border">
-            <img src="img/icon1.png" alt="">
+            <img src="<?php echo B_IMG_DIR ?>/icon1.png" alt="">
             <h4>WEB DESIGN</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.4s">
           <div class="about_block_border">
-            <img src="img/icon2.png" alt="">
+            <img src="<?php echo B_IMG_DIR ?>/icon2.png" alt="">
             <h4>DEVELOPMENT</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.6s">
           <div class="about_block_border">
-            <img src="img/icon3.png" alt="">
+            <img src="<?php echo B_IMG_DIR ?>/icon3.png" alt="">
             <h4>PAINTING</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>
         <div class="col-md-3 col-sm-3 wow fadeInUp" data-wow-delay="0.8s">
           <div class="about_block_border">
-            <img src="img/icon4.png" alt="">
+            <img src="<?php echo B_IMG_DIR ?>/icon4.png" alt="">
             <h4>MARKETING</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
@@ -153,34 +153,34 @@
         <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="isotope_items row">
             <!-- Item -->
-            <a href="img/portfolio/work-1.jpg" class="single_item link development col-md-4 col-sm-6 wow fadeInUp"
+            <a href="<?php echo B_IMG_DIR ?>/portfolio/work-1.jpg" class="single_item link development col-md-4 col-sm-6 wow fadeInUp"
               data-wow-delay="0.3s">
-              <img src="img/portfolio/work-1.jpg" alt="">
+              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-1.jpg" alt="">
             </a>
             <!-- Item -->
-            <a href="img/portfolio/work-2.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
+            <a href="<?php echo B_IMG_DIR ?>/portfolio/work-2.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
               data-wow-delay="0.6s">
-              <img src="img/portfolio/work-2.jpg" alt="">
+              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-2.jpg" alt="">
             </a>
             <!-- Item -->
-            <a href="img/portfolio/work-3.jpg" class="single_item link development col-md-4 col-sm-6 wow fadeInUp"
+            <a href="<?php echo B_IMG_DIR ?>/portfolio/work-3.jpg" class="single_item link development col-md-4 col-sm-6 wow fadeInUp"
               data-wow-delay="0.9s">
-              <img src="img/portfolio/work-3.jpg" alt="">
+              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-3.jpg" alt="">
             </a>
             <!-- Item -->
-            <a href="img/portfolio/work-4.jpg" class="single_item link web-design col-md-4 col-sm-6 wow fadeInUp"
+            <a href="<?php echo B_IMG_DIR ?>/portfolio/work-4.jpg" class="single_item link web-design col-md-4 col-sm-6 wow fadeInUp"
               data-wow-delay="1.2s">
-              <img src="img/portfolio/work-4.jpg" alt="">
+              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-4.jpg" alt="">
             </a>
             <!-- Item -->
-            <a href="img/portfolio/work-5.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
+            <a href="<?php echo B_IMG_DIR ?>/portfolio/work-5.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
               data-wow-delay="1.5s">
-              <img src="img/portfolio/work-5.jpg" alt="">
+              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-5.jpg" alt="">
             </a>
             <!-- Item -->
-            <a href="img/portfolio/work-6.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
+            <a href="<?php echo B_IMG_DIR ?>/portfolio/work-6.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
               data-wow-delay="1.8s">
-              <img src="img/portfolio/work-6.jpg" alt="">
+              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-6.jpg" alt="">
             </a>
 
             <!-- Add new image -->
@@ -206,7 +206,7 @@
             <div class="blog_block">
               <div class="blog-img-frame wow slideInLeft" data-wow-delay="0.3s">
                 <a href="blog-single.html" class="blog-img">
-                  <img src="img/img-1.jpg" alt="">
+                  <img src="<?php echo B_IMG_DIR ?>/img-1.jpg" alt="">
                 </a>
               </div>
               <!--./blog-img-frame-->
@@ -230,7 +230,7 @@
             <div class="blog_block">
               <div class="blog-img-frame wow slideInLeft" data-wow-delay="0.3s">
                 <a href="blog-single.html" class="blog-img">
-                  <img src="img/img-2.jpg" alt="">
+                  <img src="<?php echo B_IMG_DIR ?>/img-2.jpg" alt="">
                 </a>
               </div>
               <!--./blog-img-frame-->
@@ -273,7 +273,7 @@
           <div class="col-md-8 col-sm-12">
             <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.2s">
               <div class="contact_block_border">
-                <img src="img/icon5.png" alt="">
+                <img src="<?php echo B_IMG_DIR ?>/icon5.png" alt="">
                 <h4>PHONE</h4>
                 <p>01777536213</p>
                 <p>01777534531</p>
@@ -281,7 +281,7 @@
             </div>
             <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.4s">
               <div class="contact_block_border">
-                <img src="img/icon6.png" alt="">
+                <img src="<?php echo B_IMG_DIR ?>/icon6.png" alt="">
                 <h4>EMAIL</h4>
                 <p>help@mail.com</p>
                 <p>williams@mail.com</p>
@@ -289,7 +289,7 @@
             </div>
             <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-delay="0.6s">
               <div class="contact_block_border">
-                <img src="img/icon7.png" alt="">
+                <img src="<?php echo B_IMG_DIR ?>/icon7.png" alt="">
                 <h4>ADDRESS</h4>
                 <p>Bright Street</p>
                 <p>New York, USA</p>
