@@ -23,7 +23,7 @@
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12 clearfix">
               <div class="content_download">
-                <p><a href="download/CV.doc" download>Download CV</a></p>
+                <p><?php echo do_shortcode( '[download id="61"]' ) ?></p>
               </div>
             </div>
           </div><!-- end row -->
