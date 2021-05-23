@@ -1,3 +1,10 @@
+<?php
+/**
+ * The main template file
+ * Template Name: Home
+*/
+?>
+
 <?php get_header(); ?>
 
       <div class="content_head">
@@ -5,13 +12,13 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="content_name">
-                <p class="hello">WELCOME. I AM</p>
-                <p class="name">BRENDON WILLIAMS</p>
+                <p class="hello"><?php the_field('main-subtitle'); ?></p>
+                <p class="name"><?php the_field('main-title'); ?></p>
               </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="content_prof">
-                <p><span>The best designer ever.</span></p>
+                <p><span><?php the_field('main-description'); ?></span></p>
               </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12 clearfix">

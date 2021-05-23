@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Brendon - Professional Photographer</title>
+  <title><?php bloginfo('name'); echo " - "; bloginfo('description'); ?></title>
   <meta name="description" content="">
 
   <!-- Mobile Specific Meta -->
@@ -37,7 +37,7 @@
 
   <!-- Header -->
   <header id="home" class="head_bg" data-parallax="scroll" data-bleed="200" data-z-index="-100" data-speed="0.1"
-    data-image-src="<?php echo B_IMG_DIR ?>/first_screen_bg.jpg" data-over-scroll-fix="true">
+    data-image-src="<?php the_field('main-image'); ?>" data-over-scroll-fix="true">
     <div class="overlay_color">
       <div class="mnu_line">
         <div class="container">
