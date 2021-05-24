@@ -156,58 +156,12 @@
               </div>
             </div>
           </div>
-          <!-- BLOG SIDEBAR -->
-          <div class="col-md-3">
-            <div class="sidebar-menu">
-              <!---- Input search ---->
-              <div class="search-form  fullwidth">
-                <div class="form-group">
-                  <input type="text" name="key" placeholder="Enter keyword" class="form-control">
-                  <button class="btn btn-search"><i class="fa fa-search"></i></button>
-                </div>
 
-              </div>
-              <div class="space x-small"></div>
-              <!---- Catagory ---->
-              <div class="catagory">
-                <h5 class="blog-text-uppercase">catetgory</h5>
-                <ul class="menu-right">
-                  <li><a href="#">Web Design<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Web Development<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">SE Optimization<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Web Innovations<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">Web Secrets and Tricks<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                  </li>
-                </ul>
-              </div>
-              <div class="space x-small"></div>
-              <!---- Archives ---->
-              <div class="archives">
-                <h5 class="blog-text-uppercase">archives</h5>
-                <ul class="menu-right">
-                  <li><a href="#">january 2015<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                  <li><a href="#">february 2015<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                  <li><a href="#">march 2015<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                  <li><a href="#">apirl 2015<i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
-              <div class="space x-small"></div>
-              <!---- Tag ---->
-              <div class="tag ">
-                <h5 class="blog-text-uppercase">tag</h5>
-                <ul class="list-inline">
-                  <li class="tag"><a href="#" class="text-capitalize">Web</a></li>
-                  <li class="tag"><a href="#" class="text-capitalize">Design</a></li>
-                  <li class="tag"><a href="#" class="text-capitalize">Development</a></li>
-                  <li class="tag"><a href="#" class="text-capitalize">SEO</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+          <!-- BLOG SIDEBAR -->
+          
+            <?php get_sidebar(); ?>
+ 
+          
         </div>
       </div>
     </div>

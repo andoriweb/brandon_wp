@@ -96,13 +96,20 @@
     register_nav_menu( 'mob', 'Мобильное меню' );
   }
 
-  // /* Логотип */
-  // add_theme_support( 'custom-logo', [
-  //   'height'      => 58,
-  //   'width'       => 58,
-  //   'flex-width'  => false,
-  //   'flex-height' => false
-  // ] );
+  /* Регистрация сайтбара */
+  add_action( 'widgets_init', 'register_my_widgets' );
+  function register_my_widgets(){
+
+    register_sidebar( array(
+      'name'          => 'Right sidebar',
+      'id'            => 'sidebar-right',
+      'description'   => 'Правое меню',
+      'before_widget' => '<div class="widget %2$s">',
+      'after_widget'  => '</div><div class="space x-small"></div>',
+      'before_title'  => '<h5 class="blog-text-uppercase">',
+      'after_title'   => "</h5>\n",
+    ) );
+  }
 
 
 

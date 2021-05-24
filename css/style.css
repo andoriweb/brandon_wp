@@ -1357,7 +1357,7 @@ overflow: hidden;
   padding: 3px 0;
 }
 
-.sidebar-menu .archives .menu-right li { 
+.widget_archive li { 
   position: relative; 
   border: solid 1px #EAEAEA; 
   margin-bottom: 5px; 
@@ -1431,15 +1431,18 @@ overflow: hidden;
     padding-left: 15px;
 }
 
-.blog-wrapper .tag {
-    margin: 0 0 10px 0;
-}
+/* .tagcloud {
+    margin: 10px 0 10px 0;
+} */
 
-.blog-wrapper .tag a {
-    padding: 8px 15px;
-    background-color: #F4F4F4;
-    display: block;
-    text-transform: capitalize;
+/* .widget .tagcloud a */
+.tag-cloud-link {
+  font-size: 14px !important;
+  margin: 0 10px 10px 0;
+  padding: 8px 15px;
+  background-color: #F4F4F4;
+  display: inline-block;
+  text-transform: capitalize;
   }
 
 /* END Sidebar */
