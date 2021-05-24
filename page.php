@@ -46,31 +46,57 @@
           <!-- BLOG CONTENT -->
           <div class="col-md-9">
             <div class=" blog-content">
-              <div class="col-md-6 col-sm-6">
-                <div class="content-box">
-                  <div class="blog-img-frame">
-                    <a class="blog-img" href="blog-single.html">
-                      <img src="img/blog-grid/blog-grid-1.jpg" alt="">
-                    </a>
-                  </div>
 
-                  <div class="content">
-                    <a href="blog-single.html">
-                      <h4 class="blog-text-uppercase">Creating your own website</h4>
-                    </a>
-                    <p class="block-date">Brendon Williams - 27 January 2017</p>
 
-                    <p>Hello, I’m Brendon, Creative Designer & User Experience Engineer based in New York – I create
-                      awesome web digital products. I know you can too.</p>
-                    <div class="blog-buttons">
-                      <a href="blog-single.html">read more
-                        <i class="fa fa-long-arrow-right"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6 col-sm-6 ">
+
+              <?php
+                    // параметры по умолчанию
+                    $posts = get_posts( array(
+                      'numberposts' => 4,
+                      'category'    => 0,
+                      'orderby'     => 'date',
+                      'order'       => 'DESC',
+                      'include'     => array(),
+                      'exclude'     => array(),
+                      'meta_key'    => '',
+                      'meta_value'  =>'',
+                      'post_type'   => 'post',
+                      'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                    ) );
+
+                    foreach( $posts as $post ){
+                      setup_postdata($post);
+                      ?>
+                      <div class="col-md-6 col-sm-6 ">
+                        <div class="content-box">
+                          <div class="blog-img-frame">
+                            <a class="blog-img" href="<?php the_permalink(); ?>">
+                              <?php the_post_thumbnail( 'thumbnails'); ?>
+                            </a>
+                          </div>
+                          <div class="content">
+                            <a href="<?php the_permalink(); ?>">
+                              <h4 class="blog-text-uppercase"><?php the_title(); ?></h4>
+                            </a>
+                            <p class="block-date"><?php the_author(); ?> - <?php echo get_the_date('j F, Y'); ?></p>
+
+                            <?php the_excerpt(); ?>
+                            <div class="blog-buttons">
+                              <a href="<?php the_permalink(); ?>">read more
+                                <i class="fa fa-long-arrow-right"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <?php }
+
+                    wp_reset_postdata(); // сброс
+                  ?>
+
+
+
+              <!-- <div class="col-md-6 col-sm-6 ">
                 <div class="content-box">
                   <div class="blog-img-frame">
                     <a class="blog-img" href="blog-single.html">
@@ -93,6 +119,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="col-md-6 col-sm-6 ">
                 <div class="content-box">
                   <div class="blog-img-frame">
@@ -116,6 +143,7 @@
                   </div>
                 </div>
               </div>
+
               <div class="col-md-6 col-sm-6 ">
                 <div class="content-box">
                   <div class="blog-img-frame">
@@ -139,6 +167,7 @@
                   </div>
                 </div>
               </div>
+               -->
               <!-- PAGE NUMBER -->
               <div class="col-md-12">
                 <nav class="box-pagination text-center">
@@ -158,10 +187,10 @@
           </div>
 
           <!-- BLOG SIDEBAR -->
-          
-            <?php get_sidebar(); ?>
- 
-          
+
+          <?php get_sidebar(); ?>
+
+
         </div>
       </div>
     </div>
