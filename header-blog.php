@@ -37,7 +37,7 @@
 
 
 	<!-- Header -->
-	<header id="home" class="blog_head_bg" style="background: url('<?php the_field('blog-bg'); ?>') no-repeat center center;">
+	<header id="home" class="blog_head_bg" style="background: url('<?php the_field('blog-bg', 39); ?>') no-repeat center center;">
 		<div class="overlay_color">
 			<div class="mnu_line">
 				<div class="container">

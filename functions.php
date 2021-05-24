@@ -111,6 +111,24 @@
     ) );
   }
 
+  // удаляет H2 из шаблона пагинации
+  add_filter('navigation_markup_template', 'my_navigation_template', 10, 2 );
+  function my_navigation_template( $template, $class ){
+    return '
+    <div class="col-md-12"
+      <nav class="box-pagination text-center navigation %1$s" role="navigation">
+        <div class="blog-pagination nav-links">%3$s</div>
+      </nav> 
+    </div>   
+    ';
+  }
+
+
+
+
+
+ 
+
 
 
 
