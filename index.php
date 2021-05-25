@@ -47,11 +47,11 @@
         </div>
         <div class="col-md-3 col-sm-3 small_screen wow fadeInUp" data-wow-delay="0.6s">
           <p>Call me</p><!-- Change text -->
-          <p><span>+123 3456 7890</span></p><!-- Change text -->
+          <p><span><?php the_field('main-phone'); ?></span></p><!-- Change text -->
         </div>
         <div class="col-md-3 col-sm-3 small_screen wow fadeInUp" data-wow-delay="0.8s">
           <p>Email me</p><!-- Change text -->
-          <p><span>brendon@mail.com</span></p><!-- Change text -->
+          <p><span><?php the_field('main-email'); ?></span></p><!-- Change text -->
         </div>
       </div><!-- end row -->
     </div><!-- end container -->

@@ -1788,3 +1788,7 @@ overflow: hidden;
 .block-portfolio__item {
   margin-bottom: 10px;
 }
+
+.current-cat a {
+  color: #000 !important;
+}
