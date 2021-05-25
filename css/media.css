@@ -5,14 +5,18 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
+  #searchform{
+    float: left;
+    width: 100%;
+    margin-bottom: 30px;
+  }
   /**/ }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
   .head_bg .mnu_line .logo {
     text-align: left; }
-  .logo_img a {
-    background: transparent url('../img/logo.png') no-repeat center center; }
+
   footer .logo a {
       color: #588792; }
   .head_bg .content_head .scroll_bottom {
@@ -83,6 +87,7 @@
 
   .blog_read_more {
     padding-top: 0;
+    margin-top: 40px;
   }
 
   #contact {
@@ -160,6 +165,10 @@
     }
   #contact {
     padding: 50px 0 25px 0;
+  }
+
+  .sidebar-menu .search-form .form-group:after {
+    /* top: calc(50% - -1.5px); */
   }
 }
 

@@ -1322,7 +1322,9 @@ overflow: hidden;
   background-color: #F4F4F4; 
   z-index: -1;
 }
-
+.sidebar-menu .search-form .form-group{
+  /* position: relative; */
+}
 .sidebar-menu .search-form .form-group:after{
   content: '';
   background-image: url(../img/loupe.png);
@@ -1791,4 +1793,20 @@ overflow: hidden;
 
 .current-cat a {
   color: #000 !important;
+}
+
+.cat-item {
+  position: relative;
+}
+.cat-item::after {
+  content : '';
+  display: inline-block;
+  width: 20px;
+  height: 14px;
+  position: absolute;
+  top: calc(50% - 7px);
+  right: 10px;
+  background: url(../img/right.png) center no-repeat;
+  background-size: contain;
+  opacity: 0.6;
 }
