@@ -51,6 +51,7 @@
               $args = array(
                 'paged'         => ( get_query_var('paged') ? get_query_var('paged') : 1 ),
                 'post_type'   => 'post',
+                'category__not_in' => '13',
                 'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
               );
               query_posts( $args );
@@ -61,7 +62,7 @@
                     <div class="content-box">
                       <div class="blog-img-frame">
                         <a class="blog-img" href="<?php the_permalink(); ?>">
-                          <?php the_post_thumbnail( 'thumbnails'); ?>
+                          <?php the_post_thumbnail( 'image-thum'); ?>
                         </a>
                       </div>
                       <div class="content">

@@ -185,40 +185,6 @@
               wp_reset_postdata(); // сброс
             ?>
 
-
-            <!-- Item -->
-            <!-- <a href="<?php echo B_IMG_DIR ?>/portfolio/work-1.jpg" class="single_item link development col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.3s">
-              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-1.jpg" alt="">
-            </a> -->
-            <!-- Item -->
-            <!-- <a href="<?php echo B_IMG_DIR ?>/portfolio/work-2.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.6s">
-              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-2.jpg" alt="">
-            </a> -->
-            <!-- Item -->
-            <!-- <a href="<?php echo B_IMG_DIR ?>/portfolio/work-3.jpg" class="single_item link development col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="0.9s">
-              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-3.jpg" alt="">
-            </a> -->
-            <!-- Item -->
-            <!-- <a href="<?php echo B_IMG_DIR ?>/portfolio/work-4.jpg" class="single_item link web-design col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="1.2s">
-              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-4.jpg" alt="">
-            </a> -->
-            <!-- Item -->
-            <!-- <a href="<?php echo B_IMG_DIR ?>/portfolio/work-5.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="1.5s">
-              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-5.jpg" alt="">
-            </a> -->
-            <!-- Item -->
-            <!-- <a href="<?php echo B_IMG_DIR ?>/portfolio/work-6.jpg" class="single_item link aplication col-md-4 col-sm-6 wow fadeInUp"
-              data-wow-delay="1.8s">
-              <img src="<?php echo B_IMG_DIR ?>/portfolio/work-6.jpg" alt="">
-            </a> -->
-
-            <!-- Add new image -->
-
           </div>
         </div>
       </div>
@@ -236,58 +202,49 @@
         </div>
         <!-- End Title -->
         <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="blog_block">
-              <div class="blog-img-frame wow slideInLeft" data-wow-delay="0.3s">
-                <a href="blog-single.html" class="blog-img">
-                  <img src="<?php echo B_IMG_DIR ?>/img-1.jpg" alt="">
-                </a>
-              </div>
-              <!--./blog-img-frame-->
 
-              <div class="brief-content wow slideInRight" data-wow-delay="0.3s">
-                <h4 class="brief-title"><a href="blog-single.html">Creating your own website</a></h4>
-                <p class="brief-date">Brendon Williams - 27 January 2017</p>
-                <p class="brief">Hello, I’m Brendon, Creative Designer & User Experience Engineer based in New York – I
-                  create awesome web digital products. I know you can too. You can read my journal to improve yourself.
-                </p>
-                <div class="blog-buttons">
-                  <a href="blog-single.html">Read more<i class="fa fa-long-arrow-right"></i></a>
-                </div>
-              </div>
-              <!--./brief-content-->
-            </div>
-            <!-- /.blog_block -->
-          </div>
-          <!-- /.col-md-6 -->
-          <div class="col-md-6 col-sm-6">
-            <div class="blog_block">
-              <div class="blog-img-frame wow slideInLeft" data-wow-delay="0.3s">
-                <a href="blog-single.html" class="blog-img">
-                  <img src="<?php echo B_IMG_DIR ?>/img-2.jpg" alt="">
-                </a>
-              </div>
-              <!--./blog-img-frame-->
+          <?php 
+            $posts = get_posts( array(
+              'numberposts' => 2,
+              'category__not_in' => '13',
+              'post_type'   => 'post',
+              'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+            ) );
 
-              <div class="brief-content wow slideInRight" data-wow-delay="0.3s">
-                <h4 class="brief-title"><a href="blog-single.html">Creating your own website</a></h4>
-                <p class="brief-date">Brendon Williams - 27 January 2017</p>
-                <p class="brief">Hello, I’m Brendon, Creative Designer & User Experience Engineer based in New York – I
-                  create awesome web digital products. I know you can too. You can read my journal to improve yourself.
-                </p>
-                <div class="blog-buttons">
-                  <a href="blog-single.html">Read more<i class="fa fa-long-arrow-right"></i></a>
-                </div>
-              </div>
-              <!--./brief-content-->
-            </div>
-            <!-- /.blog_block -->
-          </div>
-        </div>
+            foreach( $posts as $post ){
+              setup_postdata($post);
+              ?>
+                <div class="col-md-6 col-sm-6">
+                  <div class="blog_block">
+                    <div class="blog-img-frame wow slideInLeft" data-wow-delay="0.3s">
+                      <a href="<?php the_permalink(); ?>" class="blog-img">
+                        <?php the_post_thumbnail( 'image-med' ); ?>
+                      </a>
+                    </div>
+                    <!--./blog-img-frame-->
+                    <div class="brief-content wow slideInRight" data-wow-delay="0.3s">
+                      <h4 class="brief-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                      <p class="brief-date"><?php the_author(); ?> - <?php echo get_the_date('j F Y'); ?></p>
+                      <?php the_excerpt(); ?>
+                      <div class="blog-buttons">
+                        <a href="<?php the_permalink(); ?>">Read more<i class="fa fa-long-arrow-right"></i></a>
+                      </div>
+                    </div>
+                    <!--./brief-content-->
+                  </div>
+                  <!-- /.blog_block -->
+                </div> <!-- /.col-md-6 col-sm-6 -->
+              <?php
+            } 
+            wp_reset_postdata(); // сброс
+          ?>
+
+        </div> <!-- /.row -->
+
         <div class="blog_read_more wow zoomIn" data-wow-delay="0.2s">
-          <a href="blog-page.html">read more</a>
+          <a href=" http://localhost/brandon/blog/">read more</a>
         </div>
-        <!--.row-->
+
       </div>
       <!-- /.container -->
     </div>

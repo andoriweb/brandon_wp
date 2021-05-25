@@ -123,6 +123,11 @@
     ';
   }
 
+  /* Размеры картинок */
+  add_image_size( 'image-thum', 360, 270, array( 'center', 'center' ) );
+  add_image_size( 'image-med', 360, 360, array( 'center', 'center' ) );
+  add_image_size( 'image-lar', 754, 400, array( 'center', 'center' ) );
+ 
 
 
 

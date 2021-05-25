@@ -764,6 +764,8 @@ section .section-title .section_header{
   text-transform: none; 
   color: #000; 
   font-weight: 700;
+  display: inline-block;
+  margin-top: 10px;
 }
 
 .blog_block .blog-buttons a i {
