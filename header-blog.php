@@ -44,8 +44,8 @@
 					<div class="row">
 						<div class="col-md-2 col-sm-2 col-xs-12 header-bg">
               <div class="logo_block">
-                <a href="#" class="toggle-mnu hidden-lg hidden-md hidden-sm"><span></span></a>
-                <h1 class="logo_img" style="background: transparent url(<?php the_field('logo', 41); ?>) no-repeat left center;"><a class="none" href="<?php get_option('home'); ?>">B.</a></h1>
+                <a href="http://localhost/brandon/" class="toggle-mnu hidden-lg hidden-md hidden-sm"><span></span></a>
+                <h1 class="logo_img" style="background: transparent url(<?php the_field('logo', 41); ?>) no-repeat left center;"><a class="none" href="http://localhost/brandon/">B.</a></h1>
               </div>
             </div>
 

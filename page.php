@@ -31,7 +31,7 @@
   <div class="breadcrumb">
     <nav class="container">
       <ul>
-        <li><a href="#">home</a></li>
+        <li><a href="http://localhost/brandon/">home</a></li>
         <li class="active">blog</li>
       </ul>
     </nav>
@@ -49,8 +49,8 @@
 
             <?php 
               $args = array(
-                'paged'         => ( get_query_var('paged') ? get_query_var('paged') : 1 ),
-                'post_type'   => 'post',
+                'paged'            => ( get_query_var('paged') ? get_query_var('paged') : 1 ),
+                'post_type'        => 'post',
                 'category__not_in' => '13',
                 'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
               );

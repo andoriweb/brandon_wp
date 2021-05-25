@@ -11,12 +11,12 @@
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="content_head_txt">
-                <p>Creating your own website</p>
+                <p><?php the_title(); ?></p>
               </div>
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="content_bottom_txt">
-                <p>Brendon Williams - 27 January 2017</p>
+                <p><?php the_author(); ?> - <?php echo get_the_date('j F, Y'); ?></p>
               </div>
             </div>
           </div><!-- end row -->
@@ -31,8 +31,8 @@
     <div class="breadcrumb">
       <nav class="container">
         <ul>
-          <li><a href="index.html">home</a></li>
-          <li><a href="blog-page.html">blog</a></li>
+          <li><a href="http://localhost/brandon/">home</a></li>
+          <li><a href="http://localhost/brandon/blog/">blog</a></li>
           <li class="active">blog-single</li>
         </ul>
       </nav>

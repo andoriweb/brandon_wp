@@ -128,7 +128,27 @@
   add_image_size( 'image-med', 360, 360, array( 'center', 'center' ) );
   add_image_size( 'image-lar', 754, 400, array( 'center', 'center' ) );
  
+  //отключение чекбокса о сохранении данных в комментах start
+  function disable_gdpr_stuff() {
+    // eliminate comment checkbox
+    add_filter( 'comment_form_default_fields', 'disable_gdpr_kill_cookie_consent_checkbox' );
 
+    // force comment cookies to be on
+    remove_action( 'set_comment_cookies', 'wp_set_comment_cookies', 10, 3 );
+    add_action( 'set_comment_cookies', 'disable_gdpr_force_comment_cookies', 10, 3 );
+  }
+  add_action('init', 'disable_gdpr_stuff');
+  function disable_gdpr_kill_cookie_consent_checkbox( $fields ) {
+    unset( $fields['cookies'] );
+    return $fields;
+  }
+  function disable_gdpr_force_comment_cookies( $comment, $user, $cookies_consent ) {
+    wp_set_comment_cookies( $comment, $user, true );
+  }
+
+  add_filter( 'excerpt_length', function(){
+    return 10;
+  } );
 
 
 
