@@ -16,7 +16,7 @@
             </div>
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="content_bottom_txt">
-                <p><?php the_author(); ?> - <?php echo get_the_date('j F, Y'); ?></p>
+                <p><?php the_author(); ?> - <?php echo get_the_date('j F Y'); ?></p>
               </div>
             </div>
           </div><!-- end row -->

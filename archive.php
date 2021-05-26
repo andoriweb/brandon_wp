@@ -45,7 +45,6 @@
 									$query_args = array(
 										'paged'            => ( get_query_var('paged') ? get_query_var('paged') : 1 ),
 										'post_type'        => 'post',
-										'category__not_in' => '13',
 									);
 								?>
 

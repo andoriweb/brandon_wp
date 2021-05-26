@@ -164,13 +164,15 @@
               $posts = get_posts( array(
                 'numberposts' => 6,
                 'post_type'   => 'post',
-                'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+                // 'post_status'   => 'any',
+                'category'    => 13,
+                'suppress_filters' => true,
               ) );
 
               foreach( $posts as $post ){
                 setup_postdata($post);
                 ?>
-                  <a href="<?php the_post_thumbnail_url( 'thumbnails'); ?>" class="single_item link col-md-4 col-sm-6 wow fadeInUp 
+                  <a href="<?php the_post_thumbnail_url( 'image-med' ); ?>" class="single_item link col-md-4 col-sm-6 wow fadeInUp 
                   <?php $tags = wp_get_post_tags($post->ID);
                 if($tags) {
                   foreach ($tags as $tag) {
@@ -178,11 +180,11 @@
 								}
 							}
                   ?>" data-wow-delay="0.3s">
-                  <?php the_post_thumbnail( 'thumbnails'); ?>
+                  <?php the_post_thumbnail( 'image-med' ); ?>
                   </a>
                 <?php
               } 
-              wp_reset_postdata(); // сброс
+              wp_reset_postdata();
             ?>
 
           </div>
